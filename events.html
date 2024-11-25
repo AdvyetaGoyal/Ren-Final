@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Renaissance</title>
+    <style>
+        .navbar {
+    background-color: #000000;
+    margin: auto;
+    width: 50%;
+    border:  solid ;
+    padding: 10px;
+    border-radius: 1%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    
+}
+
+.nav-links a:hover {
+    color: #717d6e;
+}
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F04747; /* Red background */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: white;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    margin: 0 10px;
+    color: white;
+}
+
+.day-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.day-tab {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.day-tab.active {
+    background-color: #F04747;
+    color: white;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+}
+.event-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.event-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-card h2, .event-card h3 {
+    margin: 10px 0;
+}
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="file:///D:/New/indexx.html#home">Home</a></li>
+            <li><a href="#about">Celebrity</a></li>
+            <li><a href="file:///D:/New/events.html">Events</a></li>
+            <li><a href="#contact">Itinerary</a></li>
+            <li><a href="#home">Sponsors</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Register now</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>EVENTS</h1>
+        <ul>
+            <li>TECHNICAL</li>
+            <li>CULTURAL</li>
+            <li>SPLASH</li>
+        </ul>
+        <div class="day-tabs">
+            <div class="day-tab active">DAY 1</div>
+            <div class="day-tab">DAY 2</div>
+            <div class="day-tab">DAY 3</div>
+        </div>
+    </header>
+
+    <section class="events-container">
+        <div class="event-card">
+            <img src="dj-party.jpg" alt="Beat the Beats" width="70%">
+            <h2>CULTURAL</h2>
+            <h3>BEAT THE BEATS</h3>
+            <p>Venue: Auditorium A-Block</p>
+        </div>
+        <div class="event-card">
+            <img src="stand.jpg" alt="Open Mic" width="70%">
+            <h2>CULTURAL</h2>
+            <h3>OPEN - MIC</h3>
+            <p>Venue: Auditorium A-Block</p>
+        </div>
+        <div class="event-card">
+            <img src="dj.jpg" alt="Breaking Battles">
+            <h2>CULTURAL</h2>
+            <h3>BREAKIN' BATTLES</h3>
+            <p>Venue: A-Block QUADRANGLE</p>
+        </div>
+        <div class="event-card">
+            <img src="djjjj.jpg" alt="Rockathon">
+            <h2>CULTURAL</h2>
+            <h3>ROCKATHON</h3>
+            <p>Venue: CENTRAL LAWN</p>
+        </div>
+    </section>
+</body>
+</html>
